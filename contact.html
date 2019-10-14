@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>DIGITAL SOLUTION | CADNA GSL</title>
+    <title>CONTACT US | CADNA GSL</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -192,7 +192,7 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                                <button tonclick="document.getElementById('contact-form').submit();" class="add-btn contact-btn">Submit</button>
+                                <button onclick="document.getElementById('contact-form').submit();" class="add-btn contact-btn">Submit</button>
                                 <div class="clearfix"></div>
                             </div>   
                         </form>  
@@ -274,11 +274,14 @@
                         <div class="footer-head">
                             <h4>Subscribe</h4>
                             <div class="subs-feilds">
-                                <div class="suscribe-input">
-                                    <input type="email" class="email form-control width-80" id="sus_email"
-                                           placeholder="Type Email">
-                                    <button type="submit" id="sus_submit" class="add-btn">Subscribe</button>
-                                </div>
+                                    <form id="contact-form" name="contact-form"  action="subscribe.php" method="POST">
+    
+                                    <div class="suscribe-input">
+                                            <input type="email" name="email" id="email" class="email form-control width-80" id="sus_email"
+                                                   placeholder="Type Email">
+                                            <button onclick="document.getElementById('contact-form').submit();" class="add-btn">Subscribe</button>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
                     </div>

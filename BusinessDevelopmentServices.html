@@ -250,11 +250,14 @@
                         <div class="footer-head">
                             <h4>Subscribe</h4>
                             <div class="subs-feilds">
-                                <div class="suscribe-input">
-                                    <input type="email" class="email form-control width-80" id="sus_email"
-                                           placeholder="Type Email">
-                                    <button type="submit" id="sus_submit" class="add-btn">Subscribe</button>
-                                </div>
+                                    <form id="contact-form" name="contact-form"  action="subscribe.php" method="POST">
+    
+                                    <div class="suscribe-input">
+                                            <input type="email" name="email" id="email" class="email form-control width-80" id="sus_email"
+                                                   placeholder="Type Email">
+                                            <button onclick="document.getElementById('contact-form').submit();" class="add-btn">Subscribe</button>
+                                        </div>
+                                    </form>
                             </div>
                         </div>
                     </div>
